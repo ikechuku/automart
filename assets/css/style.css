@@ -113,7 +113,7 @@ header nav{
     margin-top: 10px;
 }
 
-header .highlight, header .current a{
+.highlight, header .current a{
     color: #e8491d;
     font-weight: bold;
 }
@@ -156,9 +156,6 @@ box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
     font-size:55px;
     margin-bottom: 10px;
     border-bottom: #e8491d 3px solid;
-
-    
-
 }
 
 /* Global button */
@@ -340,7 +337,5 @@ header a:hover{
         margin-top:20px;
     }
 
-    #boxes
+
 }
-
-
