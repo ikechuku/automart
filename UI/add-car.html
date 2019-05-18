@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="ikechuku ">
+    <title>automart | Post Ad</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/add-car.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Macondo+Swash+Caps|Stylish" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/5.png" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <div class="main">
+        <div id="left">
+            <div class="signin">
+                <div class="wrapper">
+                    <div class="logo">
+                    <h1> Create <span class="highlight">new Ad</span> </h1>
+                        
+                    </div>
+                    <form id= "ad-form" action="" method="POST">
+                        
+                            <label for="name">Car Brand </label>
+                            <input type="text" id="name" name="name" required>
+                        
+                        
+                            <label for="text">New or Used</label>
+                            <select class="custom-select" name="cars">
+                                    <option value="new">New</option>
+                                    <option value="used">Used</option>
+                            </select>
+                            
+                            <label for="text">Body Type</label>
+                            <select name="bodytype" id="">
+                                  <option value="" selected disabled>select</option>
+                                  <option value="car">Car</option>
+                                  <option value="truck">Truck</option>
+                                  <option value="trailer">Trailer</option>
+                                  <option value="van">Van</option>
+                                </select>
+
+                            <label for="email">Year</label>
+                            <input type="number" id="year" name="year" required>
+                        
+                            <label for="password">Price (Naira)</label>
+                            <input type="number" id="price" required>
+
+                            <label for="upload">Upload Images (*max 12 images)</label>
+                            <div class="box">
+                                <input id="photos" type="file" accept="image/*" name="photos" multiple="">
+                            </div>
+
+                            <label for="upload">Description</label>
+                            <textarea name="description" id="description" placeholder=""></textarea>
+                                                    
+                       
+                        <div id="submit-button">
+                            <input type="submit" id="submit" class="btn" value="Post Ad">
+                        </div>
+                      
+                        
+                    </form>
+
+                
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <footer id="footer">
+        All rights reserved |                 
+           <a class="link" href="">Terms of Use | </a>
+           <a class="link" href="">Privacy Policy</a>
+           | Automart 2019
+       
+    </footer>       
+   
+
+
+
+</body>
+
+
+</html>
