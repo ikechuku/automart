@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chuku Omoke">
+    <meta name="description" content="Admin can perform CRUD operations on this page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automart|user Dashboard</title>
+    <link href="./assets/css/adminIndex.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/5.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        
+            <ul>
+                <div class="links">
+                <li class="dashboard-items"><a href="add-car.html">Create New Ad</a></li>
+                <li class="dashboard-items"><a href="allcars.html">My Sales Ads</a></li>
+                <li class="dashboard-items"><a href="user-purchase-orders.html">My Purchase Orders</a></li>
+                <li class="dashboard-items"><a href="user-purchase-orders.html">My Purchase Requests</a></li>
+                </div>
+                
+               
+            </ul>
+    </header>
+    <main>
+        <section class="admin-dashboard">
+            <h2>User Dashboard | Sales Ads</h2>
+            <div class="overview">
+
+                <div class="overview-item">
+                    <p id="user-total" class="stats-total">250&nbsp;<span id="user-total-span" class="stats-title"><br>
+                            New Cars</span></p>
+                </div>
+
+                <div class="overview-item">
+                    <p id="loan-total" class="stats-total">50&nbsp;<span id="loan-total-span" class="stats-title"><br>
+                        Used  Cars</span></p>
+                </div>
+
+                <div class="overview-item">
+                    <p id="total-paid" class="stats-total">80&nbsp;<span id="total-paid-span" class="stats-title"><br>Cars Flagged</span></p>
+                    
+                </div>
+
+                <div class="overview-item">
+                    <p id="total-unpaid" class="stats-total">400&nbsp;<span id="total-unpaid-span" class="stats-title"><br>Cars Total</span></p>
+                </div>
+            </div>
+
+            <div class="user-verification">
+                <div class="view-title-div">
+                    <h3 id="view-title">My Sale Ads</h3>
+                    <!-- <button id="view-view-all" type="button">Grid view </button> -->
+                </div>
+                <table class="user-view">
+                    <thead>
+                        <tr>
+                            <th>Ad ID</th>
+                            <th>Img</th>
+                            <th>Name</th>
+                            <th>Body Type</th>
+                            <th>Condition</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="user-view-list">
+
+                        <tr class="user-view-listitem">
+                            <td id="user_id">
+                                <h4>0123</h4>
+                            </td>
+                            <td id="car_id">
+                                <img >
+                            </td>
+                            <td id="car_name">
+                                <p>Toyota Hilux</p>
+                            </td>
+                            <td id="body_type">
+                                <p>Van</p>
+                            </td>
+                            <td id="condition">
+                                <p>Used</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>N8,000,000</p>
+                            </td>
+                            <td id="action">
+                                <button type="button" class="btn blue">Update</button>
+                                <button type="button" class="btn orange">Mark as Sold</button>
+                             </td>
+                        </tr>
+
+                        <tr class="user-view-listitem">
+                                <td id="user_id">
+                                    <h4>0143</h4>
+                                </td>
+                                <td id="car_id">
+                                    <img >
+                                </td>
+                                <td id="car_name">
+                                    <p>Toyota Hilux</p>
+                                </td>
+                                <td id="body_type">
+                                    <p>Van</p>
+                                </td>
+                                <td id="condition">
+                                    <p>New</p>
+                                </td>
+                                <td id="listitem6">
+                                    <p>N8,000,000</p>
+                                </td>
+                                <td id="action">
+                                    <button type="button" class="btn blue">Update</button>
+                                    <button type="button" class="btn orange">Mark as Sold</button>
+                                 </td>
+                            </tr>
+    
+
+                            <tr class="user-view-listitem">
+                                    <td id="user_id">
+                                        <h4>0153</h4>
+                                    </td>
+                                    <td id="car_id">
+                                        <img >
+                                    </td>
+                                    <td id="car_name">
+                                        <p>Toyota Hilux</p>
+                                    </td>
+                                    <td id="body_type">
+                                        <p>Van</p>
+                                    </td>
+                                    <td id="condition">
+                                        <p>Used</p>
+                                    </td>
+                                    <td id="listitem6">
+                                        <p>N8,000,000</p>
+                                    </td>
+                                    <td id="action">
+                                        <button type="button" class="btn blue">Update</button>
+                                        <button type="button" class="btn orange">Mark as Sold</button>
+                                     </td>
+                                </tr>
+        
+
+                                <tr class="user-view-listitem">
+                                        <td id="user_id">
+                                            <h4>0133</h4>
+                                        </td>
+                                        <td id="car_id">
+                                            <img >
+                                        </td>
+                                        <td id="car_name">
+                                            <p>Toyota Hilux</p>
+                                        </td>
+                                        <td id="body_type">
+                                            <p>Van</p>
+                                        </td>
+                                        <td id="condition">
+                                            <p>Used</p>
+                                        </td>
+                                        <td id="listitem6">
+                                            <p>N8,000,000</p>
+                                        </td>
+                                        <td id="action">
+                                            <button type="button" class="btn blue">Update</button>
+                                            <button type="button" class="btn orange">Mark as Sold</button>
+                                         </td>
+                                    </tr>
+                                
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="admin-dashboard">
+            <div class="section-two">
+                <div class="stats-card-1">
+                    <p id="loan-approved" class="stats-total">36&nbsp;<span id="loan-total-span" class="stats-title">Cars<br>
+                            Sold</span></p>
+                </div>
+                <div class="stats-card-2">
+                    <p id="loan-denied" class="stats-total">70&nbsp;<span id="loan-total-span" class="stats-title">Purchase<br>
+                            Orders</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
