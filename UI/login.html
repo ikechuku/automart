@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="ikechuku ">
-    <title>automart|Login</title>
+    <title>automart | Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi|Macondo+Swash+Caps|Stylish" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/5.png" type="image/x-icon">
-
 </head>
 
 <body>
@@ -21,8 +20,7 @@
             <div class="signin">
                 <div class="wrapper">
                     <div class="logo">
-                        <!-- <img src="https://www.carvillesautomart.com/public/images/carville_logo.png" alt=""> -->
-                    <h1>User <span class="highlight">Login</span> </h1>
+                    <h1>Log <span class="highlight">in</span> </h1>
                         
                     </div>
                     <form id= "signinForm" action="" method="POST">
@@ -30,7 +28,7 @@
                             <label for="text">Account Type</label>
                             <select class="custom-select" name="cars">
                                     <option valule="audi" disabled>--select account type--</option>
-                                    <option value="user">user</option>
+                                    <option value="seller">User</option>
                                     <option value="admin">Admin</option>
                             </select>
                         </div>
@@ -47,16 +45,16 @@
                     </form>
 
                     <div class="links">
-                        <a href="#"><p>Forgot password? </p></a>
+                        <a class="a-link" href="#"><p> Forgot password? </p></a>
                     </div>
                   
-                    <input type="submit" class="btn or" value="Create an Account">
+                    <input type="submit" class="btn" value="Create an Account">
 
                 </div>
             </div>
             <footer id="footer">
                      All rights reserved |                 
-                        <a class="link" href="">Terms of Use</a> |
+                        <a class="link" href="">Terms of Use </a>|
                         <a class="link" href="">Privacy Policy</a>
                     
                 </footer>
@@ -66,15 +64,13 @@
             
                 
             <h1>buy or sell a car in <span class="highlight">3 easy</span> steps</h1>
-            <div id='slider'>
-                <figure>
-                    <img src="assets/img/1.png" alt="image of car">
-                    <img src="assets/img/2.png" alt="image of car">
-                    <img src="assets/img/3.png" alt="image of car">
-                    <img src="assets/img/4.jpg" alt="image of car">
-                    <img src="assets/img/5.png" alt="image of car">
-                </figure>
-            </div>
+
+            <!-- <input type="button" class="btn " value="Create an Account"> -->
+            <img src="assets/img/1.png" alt="image of car" class = "slider">
+            <img src="assets/img/2.png" alt="image of car" class = "slider">
+            <img src="assets/img/3.png" alt="image of car" class = "slider">
+            <img src="assets/img/4.jpg" alt="image of car" class = "slider">
+            <img src="assets/img/5.png" alt="image of car" class = "slider">
         </div>
     </div>
    
@@ -82,5 +78,21 @@
 
 
 </body>
+<script>
+        let slideIndex = 0;
+
+        const homeSlideshow = () => {
+            let slides = document.getElementsByClassName('slider');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none'; 
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = 'block'; 
+            setTimeout(homeSlideshow, 2000); // Change image every 2 seconda
+        };
+        
+        homeSlideshow();
+</script>
 
 </html>
