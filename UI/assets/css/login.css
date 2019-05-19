@@ -64,21 +64,13 @@ margin-left: 10%;
     margin-left:25px;
 }
 
-#signinForm .btn{
-    background-color: #e8491d;
-    color: #f2f2f2;
-}
 
 .wrapper input, select{
     margin: auto;
     width: 80%;
-    /* position: relative; */
     height: 42px;
-    /* min-width: 192px; */
-    /* display: block; */
     border-radius: 2px;
     background: #181818;
-    /* font-size: 14px; */
     line-height: 24px;
     padding: 8px 16px;
     border-style: solid ;
@@ -92,24 +84,38 @@ margin-left: 10%;
 
 }
 
+#signinForm .btn{
+    background-color: var(--orange);
+    color: #f2f2f2;
+}
+
+#signinForm .btn:hover{
+    background-color: #9e4026;  
+    color: #f2f2f2;
+}
+
+
  footer{
 position: absolute;
 bottom: 0;
 width: 100%;
 padding: 0;
 height: 50px;
-
 }
 
-
-
+.logo{
+    overflow: hidden;
+    margin-bottom: 60px;
+    display: block;
+    text-align: left;
+    margin-left: 25px;
+    width: 80%;
+}
 
 .logo h1{
     padding-left: 10px;
     color: #f2f2f2;
-    font-size: 45px;
     line-height: 55px;
-    font-family: var();
     border-bottom: solid;
     border-width: 0.5px;
     border-color: var(--orange);
@@ -117,12 +123,15 @@ height: 50px;
 }
 
 
+
 .links a, .link{
     color: #cccccc;
     text-align: center;
     text-decoration: none;
+    
+    
 }
-.links a:hover, .link:hover{
+ .links a:hover, .link:hover{
     color:red;
     font-weight: bold;
     border-bottom: solid;
@@ -137,158 +146,16 @@ height: 50px;
     text-align: center;
     background-color: #181818;
     line-height: 12px;
-    font-size: 12px;
+    font-size: px;
     margin: 0 0 0 0 ;
     padding: 0 0 0 0 ;
-}body{
-    background-color: #181818;
-    width: 100%;
-    height: 100vh;
 }
 
-.main{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    padding: 0;
-    margin: 0;
-}
-
-#left{
-    padding: 0 0 0 0 ;
-    margin: 0 0 0 0 ;
-   
-}
-#right{
-
-    background: white ;
-    background-size: cover;
-    background-position: -72px;
-    background-repeat: no-repeat;
-    /* background-size: ce; */
-    position: relative;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-#right img{
-    position: relative;
-    display: block;
-    height: 500px;
-    width: 90%;
-    
-}
-
-#right h1{
-    margin-top:40px; 
-    color: #181818;
-    font-weight: 10px;
-}
-
-.signin {
-margin-top: 10px;
-margin-bottom: 10%;
-position: relative;
-display: block;
-margin-left: 10%; 
-}
-
-#signinForm label{
-    color: #f2f2f2;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
-    padding-bottom: 8px;
-    display: block;
-    margin-left:25px;
-}
-
-#signinForm .btn{
-    background-color: #e8491d;
-    color: #f2f2f2;
-}
-
-.wrapper input, select{
-    margin: auto;
-    width: 80%;
-    height: 42px;
-    border-radius: 2px;
-    background: #181818;
-    line-height: 24px;
-    padding: 8px 16px;
-    border-style: solid ;
-    border-width: 0.5px;
-    border-color:grey; 
-    margin-bottom:25px;
-    margin-left:25px;  
-    color: grey; 
-    width: 80%;
-    padding: 0 0 0 0;
-
-}
-
- footer{
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 0;
-height: 50px;
-
-}
-
-.logo{
-    overflow: hidden;
-    margin-bottom: 60px;
-    display: block;
-    text-align: left;
-    margin-left: 25px;
-    width: 80%;
-}
-
-
-.logo img{
-    height: 80px;
-    display: block;
-}
-
-.logo h1{
-    padding-left: 10px;
-    color: #f2f2f2;
-    font-size: 25px;
-    line-height: 55px;
-}
-
-.links{
-    width: 80%;
-    font-size: 10px;
-    font-weight: lighter;
-    text-align: left;
-}
-
-.links a, .link{
-    color: grey;
-    text-align: center;
-    text-decoration: none;
-}
-.links a:hover, .link:hover{
-    color:var(--white);
-    font-weight: bold;
-    border-bottom: solid;
-    border-bottom-color: #e8491d;
-    padding-bottom: 4px;
-
-}
-
-#left footer{
-    position: relative;
-    bottom: 0;
-    text-align: center;
-    background-color: #181818;
-    line-height: 12px;
-    font-size: 12px;
-    margin: 0 0 0 0 ;
-    padding: 0 0 0 0 ;
+@media(max-width:768px){
+    #right{
+        display: none;
+    }
+    .main{
+        display:block
+    }
 }
