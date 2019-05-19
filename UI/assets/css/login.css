@@ -123,6 +123,12 @@ height: 50px;
 }
 
 
+p{
+    font-size: 10px;
+    text-align: left;
+    margin-left: 35px;
+    font-family: var(--stylish)
+}
 
 .links a, .link{
     color: #cccccc;
@@ -132,8 +138,7 @@ height: 50px;
     
 }
  .links a:hover, .link:hover{
-    color:red;
-    font-weight: bold;
+    color: var(--white);
     border-bottom: solid;
     border-bottom-color: #e8491d;
     padding-bottom: 4px;
