@@ -1,0 +1,36 @@
+{
+  "name": "automart",
+  "version": "1.0.0",
+  "description": "Auto Mart is an online marketplace for automobiles of diverse makes, model or body type. With Auto Mart, users can sell their cars or buy from trusted dealerships or private sellers.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "babel-core": "^6.26.3",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --init",
+    "start": "node build/app.js",
+    "build": "babel api --out-dir build",
+    "dev-start": "nodemon --exec babel-node api/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikechuku/automart.git"
+  },
+  "author": "ikechuku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikechuku/automart/issues"
+  },
+  "homepage": "https://github.com/ikechuku/automart#readme"
+}
