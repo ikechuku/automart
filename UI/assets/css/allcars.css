@@ -52,6 +52,7 @@
   }
   
   img {
+    height: 200px;
     width: 100%;
   }
   
@@ -80,7 +81,7 @@
     display: inline-block;
     color: #fff;
     font-size: 0.55rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0.4rem 0.6rem;
     border-radius: 15px;
     margin-bottom: 0.5rem;
@@ -142,6 +143,8 @@
   .card {
     background: #fff;
     padding: 1rem;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
   }
   
   .card-flex-item {
@@ -189,96 +192,80 @@
   }
   
   
-  /* Nav-bar Styling */
-
-
-
 
 /* Header */
-header{
-  background-color: rgba(0,0,0,0.9);
-  padding-top: 0px;
-  /* padding-bottom: 20px; */
-  min-height: 40px;
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
-  height: 70px;
-  color: var(--white);
-  top: 0; 
-  width: 100%;    
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.highlight, header .current a{
-  color: #e8491d;
-  font-family: var(--stylish);  
+
+header li{
   font-weight: bold;
-}
-header a {
-  color: var(--white);
-  border: #e8491d solid 0.2px;
-  text-decoration: none;
-  font-weight: normal;
-  font-family: var(--stylish);
-}
-header a:hover {
-  color: var(--white);
-  border: var(--orange) solid 0.2px;
-  text-decoration: none;
-  font-weight: normal;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: orange;
+  text-shadow: -1px -1px 1px rgb(8, 8, 8)
 }
 
+header{
+  background-color: rgba(0,0,0,0.92);
+  color:#ffffff;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  min-height: 50px;
+  width: 100%;    
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+  position: sticky;
+  top:0;
+  z-index: 9999
+}
+  
+
+
+header a{
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px
+
+}
 header #branding{
-    float: left;
+  float: left;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto; 
 }
-
 
 header #branding h1{
-    margin: 0;
-    text-transform: lowercase;
-    text-shadow: -1px -1px 1px rgb(102, 36, 12),
-    0px 4px 1px rgba(0,0,0,0.5),
-             4px 4px 5px rgba(0,0,0,0.7),
-             0px 0px 7px rgba(0,0,0,0.4);
+  margin: 0;
+  text-transform: lowercase;
+  text-shadow: -1px -1px 1px rgb(102, 36, 12),
+  0px 4px 1px rgba(0,0,0,0.5),
+           4px 4px 5px rgba(0,0,0,0.7),
+           0px 0px 7px rgba(0,0,0,0.4);
 }
 
+header nav{
+  float: right;
+  margin-top: 10px;
+}
 
+.highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
 
-  header .container {
-    display: grid;
-    grid-template-columns: 85% 15%;
-    padding: 1rem;
-    align-items: center;
-  }
-  
-  header .logo {
-    width: 80px;
-    height: inherit;
-    float:left
-  }
-  
-
-  header li{
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-    color: var(--white);
+header a:hover{ 
+  color: #e8491d;
+  border-bottom: solid;
+  border-bottom-color: #ffffff;
+  padding-bottom: 5px;
 }
   
-  header ul li a {
-    padding: 0.75rem;
-    font-weight: bold;
+  section{
+      display: grid;
+      grid-template-columns: 20% 80%;
   }
 
-  
-  header ul li a:hover {
-    background: var(--light-color);
-    color: #333;
-  }
-  
-  
   /* Featured Cars */
   #featured-cars .articles-container {
     display: grid;
@@ -286,6 +273,7 @@ header #branding h1{
     grid-gap: 0.5rem;
   }
 
+  
   /* Footer */
   #main-footer {
     background: var(--dark-color);
@@ -334,8 +322,48 @@ header #branding h1{
   }
 
 
+ /* Search */
+
+ .search{
+  overflow: hidden;
+}
+
+.filter button{
+  display: block;
+  width: 100%;
+}
+
+.filter{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);  
+  border: solid 0.2px;
+  margin: 33px 0 0 20px;
+  padding: 5%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+
+}
+.filter h1{
+  text-align: center
+}
+
+.filter .full{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border-width: 0.2;
+}
+
+
 @media(max-width: 768px){
 
+ header img{
+   display: none;
+ }
+
+ header{
+   font-size: 12px;
+ }
   /* Navigation */
   header .social {
     display: none;
@@ -360,13 +388,40 @@ header #branding h1{
   #featured-cars .articles-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.1rem;
+    grid-gap: 0.3rem;
   }
+
+  .filter{
+    font-size: 12px;
+  }
+  .filter input{
+    height: 3px;
+  }
+  .btn{
+    display: block;
+    width: 100%;
+    padding: 1px 1px 1px 1px;
+    margin-bottom: 5px; 
+    height: 19px;
+    font-size: 9px
+  }
+  .articles-container{
+    overflow: hidden;
+    font-size: 12px;
+    
+  }
+  
 }
 
   
   
   @media(max-width: 600px) {
+    header img{
+      display: none;
+    }
+    header {
+      font-size: 10px;  
+    }
     #showcase .showcase-container,
     #featured-cars .articles-container,
     #main-footer .footer-container {
@@ -398,4 +453,62 @@ header #branding h1{
       grid-template-columns: repeat(1, 1fr);
       text-align: left;
     }
+    .filter input{
+      height: 3px;
+    }
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  float: right;
+
+}
+
+.tooltip img {
+  height: 25px;
+  width:20px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
