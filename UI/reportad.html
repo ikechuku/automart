@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="ikechuku ">
+    <title>automart|Update Purchase Order</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/purchase-order.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Macondo+Swash+Caps|Stylish" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/5.png" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <div class="main">
+        <div id="left">
+            <div class="signin">
+                <div class="wrapper">
+                    <div class="logo">
+                    <h1> Report <span class="highlight">this Ad</span> </h1>
+                        
+                    </div>
+                    <form id= "purchase-order-form" action="" method="POST">
+                        
+                            <label for="status">New</label>                    
+                            <img src="./assets/img/5.png" alt="">
+
+                            <h2>AD Report Form </h2>
+                            <p>Kindly provide as much detail as possible below and attach any evidence you may have. 
+                                Do note that, you may be contacted by our Representative for further details.</p>
+                            <select name="Reason" id="">
+                                <option value="" selected disabled>---Reason---</option>
+                                <option value="car">Stolen Car</option>
+                                <option value="truck">Duplicate Ad</option>
+                                <option value="trailer">Fraudulent</option>
+                                
+                          </select>
+                            <label for="upload">Description</label>
+                            <textarea name="description" id="description" placeholder=""></textarea>
+
+                            <br>
+                            <label for="upload">Evidence</label>
+                            <hr>
+                            <div class="box">
+                                <input id="photos" type="file" accept="image/*" name="photos" multiple="">
+                            </div>
+                       
+                        <div id="submit-button">
+                            <input type="submit" id="submit" class="btn" value="Make New Offer">
+                        </div>
+                      
+                        
+                    </form>
+
+                
+                </div>
+            </div>
+        
+            
+        </div>
+       
+
+</div>
+<footer id="footer">
+    All rights reserved |                 
+       <a class="link" href="">Terms of Use | </a>
+       <a class="link" href="">Privacy Policy</a>
+       | Automart 2019
+   
+</footer>
+</body>
+
+</html>
