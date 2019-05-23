@@ -75,7 +75,7 @@ span{
 
 /* Orange Button */
 .btn.orange {
-	color: #ffc65d;
+	color: var(--orange);
 	border-color: #e8491d;
 }
 .btn.orange:hover {
@@ -85,7 +85,7 @@ span{
 /* Blue Button */
 .btn.blue {
 	color: #031e2c;
-	border-color: #aeddf5;
+	border-color: rgb(43, 121, 238);
 }
 .btn.blue:hover {
 	background-color: rgba(174, 221, 245, 0.3);
